@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Form and Table</title>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <form id="myForm">
+      <div class="form-row">
+        <div class="col">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" id="firstName" required>
+        </div>
+        <div class="col">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" id="lastName" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" id="address" required>
+        </div>
+        <div class="col">
+          <label for="pincode">Pincode</label>
+          <input type="text" class="form-control" id="pincode" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col">
+          <label>Gender</label>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="male" name="gender" value="Male" required>
+            <label class="form-check-label" for="male">Male</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="female" name="gender" value="Female" required>
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+        </div>
+        <div class="col">
+          <label for="food">Choice of Food (Select at least 2)</label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="food1" value="Food 1">
+            <label class="form-check-label" for="food1">meals</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="food2" value="Food 2">
+            <label class="form-check-label" for="food2">Chicken Biryani</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="food3" value="Food 3">
+            <label class="form-check-label" for="food3">mutton Biryani</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="food4" value="Food 4">
+            <label class="form-check-label" for="food4">Chicken Rrice</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="food5" value="Food 5">
+            <label class="form-check-label" for="food5">Curd Rice</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col">
+          <label for="state">State</label>
+          <input type="text" class="form-control" id="state" required>
+        </div>
+        <div class="col">
+          <label for="country">Country</label>
+          <input type="text" class="form-control" id="country" required>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-primary mt-3" onclick="submitForm()">Submit</button>
+    </form>
+
+    <table class="table mt-3">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Address</th>
+          <th>Pincode</th>
+          <th>Gender</th>
+          <th>Food</th>
+          <th>State</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Table rows will be appended here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
